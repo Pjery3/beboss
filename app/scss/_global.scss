@@ -1,0 +1,47 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+body {
+    color: $text;
+    font-size: 18px;
+    line-height: 24px;
+    font-weight: 500;
+    font-family: "MuseoSansCyrl500";
+}
+
+.container {
+    max-width: 1550px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: $text;
+    font-family: "MuseoSansCyrl700";
+}
+
+ul,
+li,
+p {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    vertical-align: middle;
+}
+
+button {
+    font-size: 0;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
