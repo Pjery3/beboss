@@ -46,7 +46,10 @@ function scripts() {
 }
 
 function styles() {
-    return src('app/scss/style.scss')
+    return src([
+        'app/scss/style.scss',
+        'node_modules/normalize.css/normalize.css'
+    ])
         .pipe(scss({ outputStyle: 'compressed' }))
         .pipe(concat('style.min.css'))
         .pipe(autoprefixer({

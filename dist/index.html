@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,12 +8,61 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/style.min.css">
 </head>
-<body>
-    
 
-    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptate nisi exercitationem quaerat, iste similique est dolorum ea doloremque, ipsam fuga nostrum, consectetur sit tempora odit rem. Aperiam, obcaecati temporibus.</p>
+<body>
+
+    <header class="header">
+        <div class="header__inner">
+            <div class="header__logo">
+                <a href="/">
+                    <img src="images/header/logo.svg" alt="logo">
+                    <span class="logo-name">бибосс</span>
+                </a>
+            </div>
+            <div class="header__country">
+                <div class="header__country-current">
+                    <a href="#">
+                        <span>Казань</span>
+                        <i class="icon icon-arrow-down"></i>
+                    </a>
+                </div>
+                <ul class="header__country-list">
+                    <li>
+                        <a>Казань</a>
+                    </li>
+                    <li>
+                        <a>Набережные Челны</a>
+                    </li>
+                </ul>
+            </div>
+            <a href="#" class="btn header__adv color--green">
+                + Объявление
+            </a>
+            <div class="header__notifications notifications">
+                <div class="icon icon-message header__message message--active"></div>
+                <div class="icon icon-bell header__bell bell--active"></div>
+            </div>
+            <label class="switcher">
+                <input class="switcher__inp" type="checkbox">
+                <span class="switcher__slider round "></span>
+            </label>
+            <div class="header__profile avatar">
+                <div class="profile-img avatar-img avatar--alarm">
+                    <img src="images/header/profile-icon.png" alt="avatar">
+                </div>
+                <ul class="profile-actions actions">
+                    <li class="active"></li>
+                    <li class="active"></li>
+                    <li></li>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="js/libs.min.js"></script>
     <script src="js/main.min.js"></script>
 </body>
+
 </html>
