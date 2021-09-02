@@ -44,7 +44,7 @@
             </div>
             <label class="switcher header__switcher">
                 <input class="switcher__inp" type="checkbox">
-                <span class="switcher__slider round "></span>
+                <span class="switcher__slider round "><span class="slider-rounded">ПЛЮС</span></span>
             </label>
             <div class="header__profile avatar">
                 <div class="profile-img avatar-img avatar--alarm">
@@ -61,7 +61,7 @@
         </div>
     </header>
 
-    <main class="main">
+    <div class="content">
         <nav class="nav">
             <form class="nav__form">
                 <div class="nav__input input-wrapper">
@@ -82,10 +82,71 @@
                 <li><a class="link-text" href="#"><i class="icon icon-plans"></i>Бизнес-планы</a></li>
             </ul>
         </nav>
-        <article class="main__content">
+        <main class="main">
+            <section class="video">
+                <div class="video__inner">
+                    <div class="container">
+                        <div class="video__medal">
+                            <div class="video__medal-img medal">
+                                <a href="/">
+                                    <img src="images/main/main-prevbtn.png" alt="medal">
+                                </a>
+                            </div>
+                            <div class="video__medal-text">
+                                <div>Конкурс БИБОСС</div>
+                                <div class="fwb">«Лучшее видео о франшизе»</div>
+                            </div>
+                        </div>
+                        <div class="video__about">
+                            <h1 class="about-title big-title">Видео о франшизе «Персональное решение»</h1>
+                            <div class="about-inner">
+                                <div class="about-video">
+                                    <video id="videotrack" src="" poster="images/main/video-pict.jpg"></video>
+                                    <label class="videotrack-inner" for="videotrack">
+                                        <div class="videotrack-btn">
+                                            <img src="images/main/videotrack-btn.png" alt="start-play">
+                                        </div>
+                                        <div class="videotrack-text s-title">
+                                            Смотреть видео
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="video-vote">
+                                    <div class="vote-title s-title fwb">
+                                        Голосование
+                                    </div>
+                                    <div class="vote-text">
+                                        Для того, чтобы проголосовать за видео, нужно сделать репост в любой из
+                                        соцсетей:
+                                    </div>
+                                    <div class="vote-socials">
+                                        <div class="btn-social btn--fb fwb">
+                                            <i class=""></i>
+                                            Голосовать FB
+                                        </div>
+                                        <div class="btn-social btn--vk fwb">
+                                            <i class=""></i>
+                                            Голосовать VK
+                                        </div>
+                                        <div class="btn-social btn--ok fwb">
+                                            <i class=""></i>
+                                            Голосовать OK
+                                        </div>
+                                    </div>
+                                    <div class="vote-counter fwb">
+                                        657 голосов
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
 
-        </article>
-    </main>
+
+        </main>
+    </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.min.js"></script>
