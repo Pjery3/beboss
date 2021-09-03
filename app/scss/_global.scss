@@ -49,7 +49,9 @@ button {
     line-height: 32px;
     font-weight: bold;
 }
-h1 {
+h1,
+h2,
+h3 {
     margin: 0;
 }
 .big-title {
@@ -75,6 +77,64 @@ h1 {
     font-size: $textSize;
     line-height: $lineHeight;
     text-align: center;
+    display: inline-block;
+}
+
+.member {
+    display: flex;
+    &-img {
+    }
+    &-info {
+        .name {
+        }
+        .position {
+        }
+    }
+}
+
+.price {
+    background-color: rgba(30, 160, 30, 0.1);
+    border-radius: 16px;
+    padding: 24px;
+    width: 100%;
+    &__title {
+    }
+    &__fee {
+        display: flex;
+        &-title {
+            min-width: 200px;
+            color: rgba(0, 0, 0, 0.52);
+        }
+        &-text {
+        }
+    }
+    &__request {
+        text-align: center;
+        &-link {
+            display: inline-flex;
+            align-items: center;
+        }
+        &-icon {
+            display: inline-flex;
+        }
+        &-text {
+            display: inline-block;
+        }
+    }
+}
+
+.download-w-border {
+    padding: 15px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    i {
+        display: inherit;
+    }
+}
+
+.stroke {
+    height: 1px;
+    background: rgba(0, 0, 0, 0.2);
 }
 .input-wrapper {
     position: relative;
@@ -110,7 +170,7 @@ h1 {
     a {
         position: relative;
         &::before,
-        &::after{
+        &::after {
             transition: all 0.1s;
             position: absolute;
             content: "";
@@ -140,7 +200,7 @@ h1 {
     }
 }
 
-.btn-social{
+.btn-social {
     display: inline-block;
     border-radius: 50px;
     position: relative;
@@ -150,49 +210,49 @@ h1 {
     padding: 18px 48px 18px 75px;
     cursor: pointer;
     white-space: nowrap;
-    &.btn--fb{
+    &.btn--fb {
         background-color: $fbColor;
-        i{
+        i {
             background-color: $fbCircle;
-            &:before{
+            &:before {
                 width: 15px;
                 height: 33px;
                 background-image: url(../images/footer/icon-fb.svg);
             }
         }
     }
-    &.btn--vk{
+    &.btn--vk {
         background-color: $vkColor;
-        i{
+        i {
             background-color: $vkCircle;
-            &:before{
+            &:before {
                 width: 32px;
                 height: 18px;
                 background-image: url(../images/footer/icon-vk.svg);
             }
         }
     }
-    &.btn--ok{
+    &.btn--ok {
         background-color: $okColor;
-        i{
+        i {
             background-color: $okCircle;
-            &:before{
+            &:before {
                 width: 18px;
                 height: 30px;
                 background-image: url(../images/footer/icon-ok.svg);
             }
         }
     }
-    i{
+    i {
         position: absolute;
-        content: '';
+        content: "";
         left: 0;
         top: 50%;
         transform: translateY(-50%);
         width: 60px;
         height: 60px;
         border-radius: 50%;
-        &:before{
+        &:before {
             position: absolute;
             content: "";
             left: 50%;
@@ -201,6 +261,14 @@ h1 {
             background-repeat: no-repeat;
             transform: translate(-50%, -50%);
         }
+    }
+}
+
+.link {
+    font-weight: bold;
+    i {
+        vertical-align: middle;
+        margin-left: 17px;
     }
 }
 
@@ -369,6 +437,8 @@ h1 {
     background-image: url("../images/header/arrow-down.svg");
 }
 .icon-arrow-right {
+    width: 8px;
+    height: 13px;
     background-image: url("../images/arrow-right.svg");
 }
 .icon-arrow-left {
@@ -421,28 +491,33 @@ h1 {
         }
     }
 }
-.icon-fb{
+.icon-download {
+    width: 20px;
+    height: 20px;
+    background-image: url("../images/about/download.svg");
+}
+.icon-fb {
     width: 9px;
     height: 20px;
     background-image: url("../images/footer/icon-fb.svg");
 }
-.icon-vk{
+.icon-vk {
     width: 20px;
     height: 12px;
     background-image: url("../images/footer/icon-vk.svg");
 }
-.icon-ok{
+.icon-ok {
     width: 12px;
     height: 20px;
     background-image: url("../images/footer/icon-ok.svg");
 }
-.icon-telegram{
+.icon-telegram {
     background-image: url("../images/footer/icon-telegram.svg");
 }
-.icon-youtube{
+.icon-youtube {
     background-image: url("../images/footer/icon-youtube.svg");
 }
-.icon-insta{
+.icon-insta {
     background-image: url("../images/footer/icon-insta.svg");
 }
 // //////////////////END ICONS

@@ -42,9 +42,9 @@
                 <div class="icon icon-message header__message message--active"></div>
                 <div class="icon icon-bell header__bell bell--active"></div>
             </div>
-            <label class="switcher">
+            <label class="switcher header__switcher">
                 <input class="switcher__inp" type="checkbox">
-                <span class="switcher__slider round "></span>
+                <span class="switcher__slider round "><span class="slider-rounded">ПЛЮС</span></span>
             </label>
             <div class="header__profile avatar">
                 <div class="profile-img avatar-img avatar--alarm">
@@ -60,6 +60,174 @@
             </div>
         </div>
     </header>
+
+    <div class="content">
+        <nav class="nav">
+            <form class="nav__form">
+                <div class="nav__input input-wrapper">
+                    <input class="inp" id="nav-input" type="text" placeholder="Поиск">
+                    <label class="inp-label icon icon-search" for="nav-input"></label>
+                </div>
+            </form>
+
+            <ul class="nav__list">
+                <li><a class="link-text" href="#"><i class="icon icon-users"></i>Сообщество</a></li>
+                <li><a class="link-text" href="#"><i class="icon icon-estate"></i>Коммерческая недвижимость</a></li>
+                <li><a class="link-text" href="#"><i class="icon icon-franchise"></i>Франшизы</a></li>
+                <li><a class="link-text" href="#"><i class="icon icon-business"></i>Готовый бизнес</a></li>
+                <li><a class="link-text" href="#"><i class="icon icon-services"></i>Товары и услуги</a></li>
+                <li><a class="link-text" href="#"><i class="icon icon-provider"></i>Поставщики</a></li>
+                <li><a class="link-text" href="#"><i class="icon icon-investments"></i>Инвестиции</a></li>
+                <li><a class="link-text" href="#"><i class="icon icon-ideas"></i>Бизнес-идеи</a></li>
+                <li><a class="link-text" href="#"><i class="icon icon-plans"></i>Бизнес-планы</a></li>
+            </ul>
+        </nav>
+        <main class="main">
+            <section class="video">
+                <div class="video__inner">
+                    <div class="container">
+                        <div class="video__medal">
+                            <div class="video__medal-img medal">
+                                <a href="/">
+                                    <img src="images/main/main-prevbtn.png" alt="medal">
+                                </a>
+                            </div>
+                            <div class="video__medal-text">
+                                <div>Конкурс БИБОСС</div>
+                                <div class="fwb">«Лучшее видео о франшизе»</div>
+                            </div>
+                        </div>
+                        <div class="video__about">
+                            <h1 class="about-title big-title">Видео о франшизе «Персональное решение»</h1>
+                            <div class="about-inner">
+                                <div class="about-video">
+                                    <video id="videotrack" src="" poster="images/main/video-pict.jpg"></video>
+                                    <label class="videotrack-inner" for="videotrack">
+                                        <div class="videotrack-btn">
+                                            <img src="images/main/videotrack-btn.png" alt="start-play">
+                                        </div>
+                                        <div class="videotrack-text s-title">
+                                            Смотреть видео
+                                        </div>
+                                    </label>
+                                </div>
+                                <div class="video-vote">
+                                    <div class="vote-title s-title fwb">
+                                        Голосование
+                                    </div>
+                                    <div class="vote-text">
+                                        Для того, чтобы проголосовать за видео, нужно сделать репост в любой из
+                                        соцсетей:
+                                    </div>
+                                    <div class="vote-socials">
+                                        <div class="btn-social btn--fb fwb">
+                                            <i class=""></i>
+                                            Голосовать FB
+                                        </div>
+                                        <div class="btn-social btn--vk fwb">
+                                            <i class=""></i>
+                                            Голосовать VK
+                                        </div>
+                                        <div class="btn-social btn--ok fwb">
+                                            <i class=""></i>
+                                            Голосовать OK
+                                        </div>
+                                    </div>
+                                    <div class="vote-counter fwb">
+                                        657 голосов
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="company">
+                <div class="container">
+                    <div class="solution">
+
+                        <div class="solution__inner">
+                            <div class="solution__left">
+                                <div class="solution__img">
+                                    <img src="images/about/solution.png" alt="labor service network">
+                                </div>
+                                <div class="solution__info">
+                                    <h2 class="solution__info-title s-title">Персональное решение</h2>
+                                    <div class="solution__info-descr">Инвестиции 378 000 — 675 000 ₽</div>
+                                    <a class="link" href="#">
+                                        <span>Страница франшизы</span>
+                                        <i class="icon icon-arrow-right"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="solution__right">
+                                <div class="solution__member member">
+                                    <div class="solution__member-img member-img">
+                                        <img src="images/about/member.png" alt="member">
+                                    </div>
+                                    <div class="solution__member-info member-info">
+                                        <div class="name">
+                                            Дмитрий Варфоломеев
+                                        </div>
+                                        <div class="position">
+                                            Представитель
+                                        </div>
+                                    </div>
+                                </div>
+                                <a class="btn solution__btn fwb color--green" href="#">
+                                    Запросить финплан
+                                </a>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="company__inner">
+                        <div class="company__info">
+                            <h2 class="company__title s-title">
+                                О компании
+                            </h2>
+                            <div class="stroke"></div>
+                            <p class="company__about">Открой СВОЙ БИЗНЕС на услугах рабочей силы и ЗАРАБАТЫВАЙ от 200 000 рублей в месяц.</p>
+                            <p>За руку доведем до 200 000 руб/ мес личного дохода, даже если это твой первый бизнес!</p>
+                            <p>- НАЧАТЬ ОЧЕНЬ ЛЕГКО</p>
+                            <p>Без найма кучи народу, закупок, оборудования и “закапывания” миллионов на годы. Первое
+                                время можно без офиса.</p>
+                            <a class="link" href="#">
+                                <span>Страница франшизы</span>
+                                <i class="icon icon-arrow-right"></i>
+                            </a>
+                        </div>
+                        <div class="company__stats">
+                            <h2 class="company__stats-title s-title">
+                                Показатели
+                            </h2>
+                            <div class="stroke"></div>
+                            <ul class="company__stats-list">
+                                <li>
+                                    <span>1725</span>
+                                    Год основания компании
+                                </li>
+                                <li>
+                                    <span>1894</span>
+                                    Год запуска франчайзинга
+                                </li>
+                                <li>
+                                    <span>26 850</span>
+                                    Франшизных предприятий
+                                </li>
+                                <li>
+                                    <span>1</span>
+                                    Собственных предприятий
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+        </main>
+    </div>
+
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.min.js"></script>
