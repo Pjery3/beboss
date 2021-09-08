@@ -13,10 +13,10 @@
 
     <header class="header">
         <div class="header__inner">
-            <div class="header__logo">
+            <div class="header__logo logo">
                 <a href="/">
                     <img src="images/header/logo.svg" alt="logo">
-                    <span class="logo-name">бибосс</span>
+                    <span class="header__logo-name logo-name">бибосс</span>
                 </a>
             </div>
             <div class="header__country">
@@ -39,12 +39,18 @@
                 + Объявление
             </a>
             <div class="header__notifications notifications">
-                <div class="icon icon-message header__message message--active"></div>
-                <div class="icon icon-bell header__bell bell--active"></div>
+                <div class="icon-wrapper icon-wrapper-message">
+                    <div class="icon icon-message header__message message--active"></div>
+                </div>
+                <div class="icon-wrapper icon-wrapper-bell">
+                    <div class="icon icon-bell header__bell bell--active"></div>
+                </div>
             </div>
-            <label class="switcher header__switcher">
-                <input class="switcher__inp" type="checkbox">
-                <span class="switcher__slider round "><span class="slider-rounded">ПЛЮС</span></span>
+            <label for="switcher-label" class="header__switcher-wrapper">
+                <label class="switcher header__switcher">
+                    <input id="switcher-label" class="switcher__inp" type="checkbox" checked>
+                    <span class="switcher__slider round "><span class="slider-rounded">ПЛЮС</span></span>
+                </label>
             </label>
             <div class="header__profile avatar">
                 <div class="profile-img avatar-img avatar--alarm">
@@ -224,7 +230,7 @@
                         </div>
                     </div>
                     <div class="company__price price">
-                        <div class="price__title s-title">
+                        <div class="price__title s-title fwb">
                             Стоимость франшизы и цена владения
                         </div>
                         <div class="price__inner">
@@ -270,9 +276,394 @@
                 </div>
             </section>
 
+            <section class="franchise">
+                <div class="container">
+                    <div class="franchise__inner container-s">
+                        <h2 class="franchise__title s-title fwb">
+                            Описание франшизы
+                        </h2>
+                        <div class="stroke"></div>
+                        <div class="franchise__text">
+                            <p>ЧЕМ ТЫ БУДЕШЬ ЗАНИМАТЬСЯ? И КАК БУДЕШЬ ЗАРАБАТЫВАТЬ НА УСЛУГАХ РАБОЧЕЙ СИЛЫ?</p>
+                            <p>Ты будешь предоставлять рабочую силу на склады, фабрики, заводы, производства со сдельной
+                                и
+                                почасовой оплатой.</p>
+                            <p>Кто будет работать у тебя?</p>
+                            <p>• Рабочие, ищущие дополнительный заработок</p>
+                            <p>• Временно безработные люди</p>
+                        </div>
+
+                        <a class="franchise__link link" href="#">
+                            <span>Страница франшизы</span>
+                            <i class="icon icon-arrow-right"></i>
+                        </a>
+                        <div class="franchise__images">
+                            <div class="franchise__img">
+                                <img src="images/about-franchise/franchises-img1.jpg" alt="franchise-about">
+                            </div>
+                            <div class="franchise__img">
+                                <img src="images/about-franchise/franchises-img2.jpg" alt="franchise-about">
+                            </div>
+                            <div class="franchise__img">
+                                <img src="images/about-franchise/franchises-img3.jpg" alt="franchise-about">
+                            </div>
+                            <div class="franchise__img">
+                                <img src="images/about-franchise/franchises-img4.jpg" alt="franchise-about">
+                            </div>
+                        </div>
+                        <div class="franchise__form">
+                            <div class="franchise__form-member member">
+                                <div class="member-img">
+                                    <img src="images/form/form-icon.png" alt="member">
+                                </div>
+                                <div class="member-info">
+                                    <div class="name">
+                                        Дмитрий Варфоломеев
+                                    </div>
+                                    <div class="position">
+                                        Представитель
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form__inner">
+                                <div class="form-inputs">
+                                    <form class="franchise-data" action="">
+                                        <div class="input-wrapper">
+                                            <input class="inp" type="text" name="name" placeholder="Ваше имя"
+                                                id="franchise-form-skin">
+                                            <label class="inp-label icon icon-member" for="franchise-form-skin"></label>
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <input class="inp" type="text" name="email" placeholder="E-mail"
+                                                id="franchise-form-skin">
+                                            <label class="inp-label icon icon-envilopment"
+                                                for="franchise-form-skin"></label>
+                                        </div>
+                                        <div class="input-wrapper">
+                                            <input class="inp" type="text" name="phone" placeholder="Номер телефона"
+                                                id="franchise-form-skin">
+                                            <label class="inp-label icon icon-phone" for="franchise-form-skin"></label>
+                                        </div>
+                                        <textarea class="ta input-wrapper" name="" id="" cols="30" rows="10"></textarea>
+                                    </form>
+                                    <div class="franchise__form-captcha captcha">
+                                        <div class="captcha__inner">
+                                            <div class="captcha__check">
+                                                <div class="captcha__check-btn"></div>
+                                                <div class="captcha__check-text">
+                                                    Я не робот
+                                                </div>
+                                            </div>
+                                            <div class="captcha__security">
+                                                Проверка
+                                                безопасности
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <a href="#" class="franchise__form-btn fwb btn color--green">Отправить сообщение</a>
+                                    <div class="franchise__form-security">
+                                        <div class="security-icon">
+                                            <img src="images/form/form-security.png" alt="security">
+                                        </div>
+                                        <p>Ваши данные в полной безопасности. Они видны только автору объявления.</p>
+                                    </div>
+                                </div>
+                                <div class="franchise__form-list">
+                                    <div class="list-title fwb">
+                                        Что можно обсудить с представителем:
+                                    </div>
+                                    <ul class="list-items">
+                                        <li>
+                                            <i class="list-item icon icon-check"></i>
+                                            <p>Узнать есть ли возможность открытия в вашем городе</p>
+                                        </li>
+                                        <li>
+                                            <i class="list-item icon icon-check"></i>
+                                            <p>Попросить контакты уже действующих франчайзи</p>
+                                        </li>
+                                        <li>
+                                            <i class="list-item icon icon-check"></i>
+                                            <p>Получить шаблоны договоров для ознакомления</p>
+                                        </li>
+                                        <li>
+                                            <i class="list-item icon icon-check"></i>
+                                            <p>Ознакомиться с финансовым планом и этапами запуска бизнеса</p>
+                                        </li>
+                                        <li>
+                                            <i class="list-item icon icon-check"></i>
+                                            <p>Узнать какие гарантии может дать франшиза</p>
+                                        </li>
+                                        <li>
+                                            <i class="list-item icon icon-check"></i>
+                                            <p>Обсудить возможность скидки</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="stroke"></div>
+                </div>
+            </section>
+
+            <section class="another">
+                <div class="container">
+                    <h2 class="another__title fwb m-title">
+                        Другие участники конкурса
+                    </h2>
+                    <div class="another__items">
+                        <div class="another__item">
+                            <a href="#">
+                                <div class="another__item-poster">
+                                    <img class="another__item-preview" src="images/another-members/tom-tailor.jpg"
+                                        alt="tom-tailor">
+                                    <img src="images/another-members/members-item1.jpg" alt="image">
+                                    <img class="another__item-play" src="images/main/videotrack-btn.png" alt="play-btn">
+                                </div>
+                            </a>
+                            <h3 class="another__item-title s-title">
+                                Borodach
+                            </h3>
+                            <div class="another__item-descr">
+                                Мужские парикмехерские
+                            </div>
+                            <a href="#" class="another__item-link link">
+                                <span class="fwb">Смотреть и голосовать</span>
+                                <i class="icon icon-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="another__item">
+                            <a href="#">
+                                <div class="another__item-poster">
+                                    <img class="another__item-preview" src="images/another-members/borodach.jpg"
+                                        alt="tom-tailor">
+                                    <img src="images/another-members/members-item2.jpg" alt="image">
+                                    <img class="another__item-play" src="images/main/videotrack-btn.png" alt="play-btn">
+                                </div>
+                            </a>
+                            <h3 class="another__item-title s-title">
+                                Персональное решение
+                            </h3>
+                            <div class="another__item-descr">
+                                Сеть услуг рабочей силы
+                            </div>
+                            <a href="#" class="another__item-link link">
+                                <span class="fwb">Смотреть и голосовать</span>
+                                <i class="icon icon-arrow-right"></i>
+                            </a>
+                        </div>
+
+                        <div class="another__item">
+                            <a href="#">
+                                <div class="another__item-poster">
+                                    <img class="another__item-preview" src="images/another-members/toyru.jpg"
+                                        alt="tom-tailor">
+                                    <img src="images/another-members/members-item3.jpg" alt="image">
+                                    <img class="another__item-play" src="images/main/videotrack-btn.png" alt="play-btn">
+                                </div>
+                            </a>
+                            <h3 class="another__item-title s-title">
+                                TOY.RU
+                            </h3>
+                            <div class="another__item-descr">
+                                Магазин детских игрушек
+                            </div>
+                            <a href="#" class="another__item-link link">
+                                <span class="fwb">Смотреть и голосовать</span>
+                                <i class="icon icon-arrow-right"></i>
+                            </a>
+                        </div>
+
+                    </div>
+                    <a href="#" class="btn btn-bordered another__btn fwb">Все участники конкурса</a>
+                </div>
+            </section>
         </main>
     </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+                <div class="footer__header">
+                    <div class="footer__header-logo logo">
+                        <a href="/">
+                            <img src="images/header/logo.svg" alt="logo">
+                            <span class="footer__logo-name logo-name">бибосс</span>
+                        </a>
+                    </div>
+                    <div class="footer__header-text">
+                        <i class="icon icon-lightning"></i>
+                        <span>Управление</span>
+                    </div>
+                </div>
+                <div class="footer__cols">
+                    <div class="footer__col">
+                        <div class="footer__col-title">РАЗДЕЛЫ</div>
+                        <ul class="footer__col-list">
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-users--white"></i>
+                                    Сообщество
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-estate--white"></i>
+                                    Коммерческая недвижимость
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-franchise--white"></i>
+                                    Франшизы
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-business--white"></i>
+                                    Готовый бизнес
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-services--white"></i>
+                                    Товары для бизнеса
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-investments--white"></i>
+                                    Инвестпроекты
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-ideas--white"></i>
+                                    Бизнес-идеи
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-plans--white"></i>
+                                    Бизнес-планы
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-bid--white"></i>
+                                    Заявки
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__col-title">
+                            ПРОЕКТЫ
+                        </div>
+                        <ul class="footer__col-list">
+                            <li><a href="#">Бизнес-журнал</a></li>
+                            <li><a href="#">Календарь мероприятий</a></li>
+                            <li><a href="#">Рейтинг франшиз</a></li>
+                            <li><a href="#">Франчайзинговая прмия</a></li>
+                            <li><a href="#">Мисс франчайзинг 2019</a></li>
+                            <li><a href="#">Рейтинг торговых центров</a></li>
+                            <li><a href="#">Как начать бизнес</a></li>
+                            <li><a href="#">Карта МСП</a></li>
+                            <li><a href="#">Мобильные приложения</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__col-title">
+                            БИБОСС
+                        </div>
+                        <ul class="footer__col-list">
+                            <li><a href="#">О портале</a></li>
+                            <li><a href="#">Статьи пользователей</a></li>
+                            <li><a href="#">Отзывы о нас</a></li>
+                            <li><a href="#">Рекламные услуги</a></li>
+                            <li><a href="#">Работа у нас</a></li>
+                            <li><a href="#">Книги</a></li>
+                            <li><a href="#">Контакты</a></li>
+                            <li><a href="#">Служба поддержки</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer__col">
+                        <div class="footer__col-title">СОЦСЕТИ</div>
+                        <ul class="footer__col-list">
+                            <li>
+                                <a href="#" class="link-text">
+                                    <div class="footer__col-icon">
+                                        <i class="icon icon-fb"></i>
+                                    </div>
+                                    <span>Facebook</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <div class="footer__col-icon">
+                                        <i class="icon icon-vk"></i>
+                                    </div>
+                                    <span>Вконтакте</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-telegram"></i>
+                                    <span>Телеграм</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-insta"></i>
+                                    <span>Instagram</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-youtube"></i>
+                                    <span>Youtube</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" class="link-text">
+                                    <i class="icon icon-ok"></i>
+                                    <span>Одноклассники</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
 
+                </div>
+                <div class="stroke"></div>
+                <div class="footer__country">
+                    <div class="country-list">
+                        <div class="country-list-other">
+                            ДРУГИЕ СТРАНЫ
+                        </div>
+                        <a href="#" class="flag-ua footer-flags">
+                            <img src="images/footer/ua.png" alt="ukraine">
+                            <span>Украина</span>
+                        </a>
+                        <a href="#" class="flag-kz footer-flags">
+                            <img src="images/footer/kz.png" alt="kazakhstan">
+                            <span>Казахстан</span>
+                        </a>
+                        <a href="#" class="flag-blr footer-flags">
+                            <img src="images/footer/blr.png" alt="belarus">
+                            <span>Белоруссия</span>
+                        </a>
+                    </div>
+                    <div class="footer__copyright">
+                        <span>© БИБОСС 2006-2018</span>
+                        <a href="#">
+                            <img src="images/footer/footer-stats.png" alt="stats">
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </footer>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="js/main.min.js"></script>
