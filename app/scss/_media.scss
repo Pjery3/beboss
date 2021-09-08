@@ -1,4 +1,9 @@
 @media (max-width: 1830px) {
+    .content {
+        .main {
+            margin-left: 304px;
+        }
+    }
     .footer {
         margin-left: 304px;
     }
@@ -9,14 +14,6 @@
     }
 }
 @media (max-width: 1760px) {
-    .content {
-        .main {
-            margin-left: 304px;
-        }
-    }
-    .footer {
-        margin-left: 304px;
-    }
 }
 @media (max-width: 1370px) {
     .content {
@@ -97,6 +94,11 @@
     }
     .big-title {
         font-size: 36px;
+    }
+}
+@media(max-width: 1050px){
+    .content .main .another__items{
+        overflow-x: scroll;
     }
 }
 @media (max-width: 970px) {
