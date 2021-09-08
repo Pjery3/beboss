@@ -17,7 +17,7 @@ body {
 
 .container {
     max-width: 1216px;
-    padding: 0 5px;
+    padding: 0 10px;
     margin: 0 auto;
 }
 
@@ -393,7 +393,7 @@ h3 {
             &::after {
                 position: absolute;
                 content: "";
-                right: -5px;
+                right: -3px;
                 top: -5px;
                 width: 16px;
                 height: 16px;
@@ -438,6 +438,7 @@ h3 {
 // //////////////////ICONS
 .icon {
     display: inline-block;
+    min-width: 24px;
     width: 24px;
     height: 24px;
     background-color: transparent;
@@ -446,6 +447,9 @@ h3 {
 }
 .icon-search {
     background-image: url("../images/nav/nav-1.svg");
+}
+.icon-user{
+    background-image: url("../images/header/icon-user.svg");
 }
 .icon-users {
     background-image: url("../images/nav/nav-2.svg");
